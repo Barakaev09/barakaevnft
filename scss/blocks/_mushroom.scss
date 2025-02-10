@@ -1,0 +1,83 @@
+.mushroom {
+    width: 100%;
+    background: linear-gradient(
+            180deg,
+            rgba(162, 89, 255, 0),
+            rgb(162, 89, 255) 100%
+        ),
+        url('../img/mushroom-bg.png') center center/cover no-repeat;
+    .mushroom_items {
+        width: 100%;
+        padding-top: 360px;
+        padding-bottom: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        .mushroom_content {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            .mushroom_owner {
+                @include owner-style;
+                padding: 10px 20px;
+                background-color: $main-dark;
+                border-radius: 20px;
+            }
+            .mushroom_title {
+                font-size: 51px;
+                font-weight: 600;
+                line-height: 110%;
+                text-transform: capitalize;
+                color: #fff;
+                margin: 0;
+                margin-top: 30px;
+            }
+            .mushroom_btn {
+                @include fill-btn-style;
+                margin-top: 30px;
+                padding: 22px 50px;
+                background-color: #fff;
+                color: #000;
+                border-color: #fff;
+                i {
+                    color: $main-purple;
+                }
+                &:hover {
+                    color: #fff;
+                    i {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .mushroom_time {
+            background: #3b3b3b80;
+            border-radius: 20px;
+            padding: 30px;
+            font-family: $space-mono;
+            .time_title {
+                font-size: 12px;
+                color: #fff;
+            }
+            .time_content {
+                margin-top: 10px;
+                display: flex;
+                gap: 10px;
+                font-size: 28px;
+                font-weight: 700;
+                color: #fff;
+                .time_item {
+                    .time_num {
+                        font-size: 28px;
+                        font-weight: 700;
+                    }
+                    .time_name {
+                        font-size: 12px;
+                        font-weight: 400;
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

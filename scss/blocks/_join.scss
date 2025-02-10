@@ -1,0 +1,32 @@
+.join {
+    width: 100%;
+    .join_items {
+        width: 100%;
+        padding-top: 40px;
+        padding-bottom: 80px;
+        .join_content {
+            border-radius: 20px;
+            background: $main-gray;
+            padding: 60px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            gap: 80px;
+            .join_img {
+                width: 100%;
+            }
+            .join_text {
+                .join_title {
+                    @include title-style;
+                }
+                .join_subtitle {
+                    @include subtitle-style;
+                }
+                .join_form {
+                    @include form-style;
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.categories {
+    width: 100%;
+    .categories_items {
+        width: 100%;
+        padding: 80px 0;
+        .categories_title {
+            @include title-style;
+        }
+        .categories_content {
+            margin-top: 60px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            .categories_item {
+                background: $main-gray;
+                border-radius: 20px;
+                @include up-animation;
+                .item_img {
+                    width: 100%;
+                    border-radius: 20px 20px 0 0;
+                }
+                .item_text {
+                    padding: 20px 30px 25px 30px;
+                    color: #fff;
+                    @include little-title-style;
+                }
+            }
+        }
+    }
+}

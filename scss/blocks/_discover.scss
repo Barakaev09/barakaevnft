@@ -1,0 +1,55 @@
+.discover {
+    width: 100%;
+    .discover_items {
+        width: 100%;
+        padding: 80px 0;
+        .discover_header {
+            @include header-style;
+        }
+        .discover_content {
+            margin-top: 60px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            .discover_item {
+                background-color: $main-gray;
+                border-radius: 20px;
+                .item_img {
+                    width: 100%;
+                }
+                .item_text {
+                    padding: 20px 30px 25px 30px;
+                    .item_title {
+                        @include little-title-style;
+                    }
+                    .item_owner {
+                        @include owner-style;
+                        margin-top: 5px;
+                    }
+                    .item_info {
+                        margin-top: 25px;
+                        display: flex;
+                        justify-content: space-between;
+                        .info_item {
+                            .info_title {
+                                font-size: 12px;
+                                font-family: $space-mono;
+                                color: $text-gray;
+                            }
+                            .info_value {
+                                margin-top: 8px;
+                                color: #fff;
+                                font-family: $space-mono;
+                            }
+                            &:last-child {
+                                text-align: right;
+                            }
+                        }
+                    }
+                }
+                @include up-animation;
+            }
+        }
+    }
+}
