@@ -67,5 +67,8 @@
             }
             @include up-animation;
         }
+        .promo_small_items {
+            display: none;
+        }
     }
 }
